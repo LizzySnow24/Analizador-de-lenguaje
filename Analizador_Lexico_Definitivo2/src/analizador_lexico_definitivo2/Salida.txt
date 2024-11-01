@@ -1,0 +1,29 @@
+iniciodeclararvar
+ | a | : ent ; 
+ | b | : ent ;
+ | n | : ent ; 
+ | j | : ent ; 
+ | c | : ent ;
+findeclararvar
+mien ( | c | != 1 )
+sout ( "Ingrese valor: " ) ;
+leer | n | ;
+| j | = | n | % 2 ;
+si ( | j | == 0 )
+ sout ( "Es par" ) ; 
+ per ( | a | = 1 ; | a | :: | n | ; | a | ++ ) 
+ | b | = | a | * 2 ; 
+ sout ( | b | ) ;
+ finper
+finsi
+si ( | j | != 0 )
+ sout ( "Es impar" ) ; 
+ per ( | a | = 1 ; | a | :: | n | ; | a | ++ ) 
+ | b | = | a | * 2 ; 
+ | b | = | b | - 1 ; 
+ sout ( | b | ) ;
+ finper
+finsi
+sout ( "Si quiere seguir escriba un valor diferente de 1: " ) ;
+leer | c | ;
+finmien
